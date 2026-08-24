@@ -40,20 +40,32 @@ public class ReverseLinkedList
 
     public void reverse()
     {
+        // Node prevNode=null;
+        // Node currNode=head;
+
+        // while (currNode!=null) 
+        // {
+        //     Node nextNode=currNode.next;
+
+        //     currNode.next=prevNode;
+        //     prevNode=currNode;   
+        //     currNode=nextNode;
+
+        // }
+        // head=prevNode;
+
+
         Node prevNode=null;
         Node currNode=head;
 
         while (currNode!=null) 
         {
             Node nextNode=currNode.next;
-
             currNode.next=prevNode;
-            prevNode=currNode;   
-            currNode=nextNode;
-
+            prevNode=currNode;
+            currNode=nextNode;    
         }
         head=prevNode;
-
     }
 
     
