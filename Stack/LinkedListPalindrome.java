@@ -48,7 +48,5 @@ public  class LinkedListPalindrome
         head.next.next.next.next=new Node('A');
 
         System.out.println(isPalindrome(head));
-
-
     }    
 }
